@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
       accountName = event.queryStringParameters.account;
     }
     var params = {
-      TableName: 'branches',
+      TableName: "results",
       KeyConditionExpression:"#account=:account",
       ExpressionAttributeNames:{
         "#account":"account"
